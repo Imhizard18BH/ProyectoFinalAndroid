@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".actividades.ListaProductosActivity"
+    android:background="@color/black">
+
+    <fragment
+        android:id="@+id/barra_superior"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        class="co.edu.eam.miprimeraapp.fragmentos.BarraSuperiorFragment" />
+
+    <TextView
+        android:id="@+id/titulo_categoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:textSize="21sp"/>
+
+    <FrameLayout
+        android:id="@+id/lista_productos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

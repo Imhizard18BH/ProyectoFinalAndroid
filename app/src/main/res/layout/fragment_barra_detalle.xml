@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/gris"
+    android:paddingTop="35dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:context=".fragmentos.BarraDetalleFragment"
+    android:backgroundTint="@color/black"
+    >
+
+    <Button
+        android:id="@+id/btn_favorito"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="10dp"
+        android:layout_toStartOf="@+id/btn_carrito"
+        android:background="?android:attr/selectableItemBackground"
+        android:fontFamily="@font/font_awesome_6_free_regular_400"
+        android:padding="0dp"
+        android:text="\uf004"
+        android:textColor="@color/yellow"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btn_carrito"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_vertical"
+        android:background="?android:attr/selectableItemBackground"
+        android:fontFamily="@font/font_awesome_6_free_solid_900"
+        android:padding="0dp"
+        android:text="\uf07a"
+        android:textColor="@color/yellow"
+        android:textSize="25sp" />
+
+</RelativeLayout>

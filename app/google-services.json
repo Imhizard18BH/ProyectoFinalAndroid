@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "50898701083",
+    "project_id": "unishop-eam",
+    "storage_bucket": "unishop-eam.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:50898701083:android:38bc5af6f4b7f20428a1be",
+        "android_client_info": {
+          "package_name": "co.edu.eam.miprimeraapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "50898701083-bbv185sk14cu9cr152f61321ekhnmsug.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCQ_xCd4nD0bJigQT66WMSekxVgrIxZas"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "50898701083-bbv185sk14cu9cr152f61321ekhnmsug.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginRight="3dp"
+    android:layout_marginLeft="3dp"
+    android:backgroundTint="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/default_product"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:id="@+id/txt_usuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Carlos"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/txt_fecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="23 abril"
+                android:layout_marginStart="10dp"
+                android:layout_alignBottom="@+id/txt_usuario"
+                android:layout_toRightOf="@+id/txt_usuario"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/txt_comentario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comentario test"
+                android:layout_marginTop="8dp"
+                android:textSize="15sp"
+                android:layout_below="@id/txt_usuario"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

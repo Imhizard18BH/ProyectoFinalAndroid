@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:context=".fragmentos.ListaComentariosFragment"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:id="@+id/form_comentario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/mensaje_comentario"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:lines="4"
+            android:inputType="textMultiLine"
+            android:gravity="top|left"
+            android:padding="15dp"
+            android:textSize="14sp"
+            android:background="@drawable/fondo_forms"
+            android:hint="@string/escribir_comentario"
+            android:backgroundTint="@color/transparent"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            />
+
+        <Button
+            android:id="@+id/comentar_producto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="right"
+            android:text="@string/comentar"
+            android:backgroundTint="@color/yellow"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divisor"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/black"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/lista_comentarios"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/txt_sin_comentarios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:visibility="gone"
+            android:text="@string/sin_comentarios"
+            android:textColor="@color/yellow"/>
+
+
+    </FrameLayout>
+
+
+
+</LinearLayout>
